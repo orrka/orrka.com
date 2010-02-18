@@ -1,4 +1,7 @@
-builder   --source=http://gemcutter.org
-rdiscount --source=http://gemcutter.org
-toto      --source=http://gemcutter.org --version=">= 0.2.8"
+builder                           --source=http://gemcutter.org
+rdiscount                         --source=http://gemcutter.org
+toto                              --source=http://gemcutter.org --version=">= 0.4.0"
+haml                              --source=http://gemcutter.org --version=">= 2.2.20"
+coderay                           --source=http://gemcutter.org
+hyperbolist-rack-codehighlighter  -- source=http://gemcutter.org
 
