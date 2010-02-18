@@ -1,0 +1,9 @@
+%h1 This is the Archives
+%ul
+  - if archives.length > 0
+    - for entry in archives
+      %li
+        %a{ :href => entry.path }
+          = entry.title
+  - else
+    There are no articles for this date.

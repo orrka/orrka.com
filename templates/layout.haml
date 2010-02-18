@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %link{ :href => "/css/screen.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/index.xml", :title => "#{title} - feed", :rel => "alternate", :type => "application/atom+xml" }
+    %title
+      = title
+  %body
+    %section
+      = yield
+    %footer
+      powered by
+      %a{ :href => "http://cloudhead.io/toto" }
+        toto

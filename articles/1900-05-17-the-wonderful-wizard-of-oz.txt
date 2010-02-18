@@ -5,3 +5,20 @@ date: 1900/05/17
 Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, 
 who was a farmer, and Aunt Em, who was the farmer's wife.
 
+This is a test of [Markdown](http://yahoo.com)
+
+but how does it handle
+
+    :::ruby
+    # some code
+    
+
+
+<pre>:::ruby
+puts "hello world"
+</pre>
+
+    :::javascript
+    for(x in y) {
+      alert('foo');
+    }
