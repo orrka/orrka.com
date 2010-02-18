@@ -2,6 +2,7 @@ builder                           --source=http://gemcutter.org
 rdiscount                         --source=http://gemcutter.org
 toto                              --source=http://gemcutter.org --version=">= 0.4.0"
 haml                              --source=http://gemcutter.org --version=">= 2.2.20"
+compass                           --source=http://gemcutter.org --version=">= 0.8.17"
 coderay                           --source=http://gemcutter.org
 hyperbolist-rack-codehighlighter  --source=http://gemcutter.org
 
