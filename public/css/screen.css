@@ -16,4 +16,4 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 
 img a { border: none; }
 
-body { background: #ccc; }
+body { background: #333; color: #efefef; }
