@@ -32,7 +32,7 @@ img a { border: none; }
 
 @font-face { font-family: 'Gentium Book Basic Bold'; src: url('/fonts/GenBkBasB.eot'); src: local('Gentium Book Basic Bold'), local('GentiumBookBasic-Bold'), url('/fonts/GenBkBasB.ttf') format('truetype'); }
 
-@font-face { font-family: 'Gentium Book Basic Bold Italic'; src: url('/fonts/GenBkBasBI.eot'); src: url('/fonts/GenBkBasBI.ttf') format('truetype'); }
+@font-face { font-family: 'Gentium Book Basic Bold Italic'; src: url('/fonts/GenBkBasBI.eot'); src: local('Gentium Book Basic Bold Italic'), local('GentiumBookBasic-BoldItalic'), url('/fonts/GenBkBasBI.ttf') format('truetype'); }
 
 body { color: #95DEFF; font-family: Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.3em; }
 
@@ -61,7 +61,7 @@ span.amp { font-family: "Baskerville","Constantia","Palatino","Palatino Linotype
 .intro { text-align: center; }
 .intro h3 { color: #003F5F; font-weight: normal; font-family: 'Gentium Book Basic Regular', Georgia, serif; font-size: 40px; line-height: 1.2em; margin-bottom: 32px; text-align: center; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
 
-.orrka { font-family: 'Gentium Book Basic Bold Italic',Georgia,serif; font-weight: normal; font-style: normal; }
+.orrka { font-family: 'Gentium Book Basic Regular',Georgia,serif; font-weight: bold; font-style: italic; }
 
 footer { color: #95DEFF; text-align: right; }
 footer a { color: #fff; font-weight: bold; }
