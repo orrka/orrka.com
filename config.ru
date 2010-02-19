@@ -33,6 +33,8 @@ use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", 
 
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
+else
+  Sass::Plugin.options[:never_update] = true
 end
 
 #
