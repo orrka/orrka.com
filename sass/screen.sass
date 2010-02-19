@@ -1,6 +1,82 @@
-@import compass/reset
+@import compass/reset.sass
+@import compass/utilities
+@import css3
 @import typography
 
+section, article, aside, header, footer, nav, dialog, figure
+  display: block
+
 body
-  background: #333
-  color: #efefef
+  background: #A1D9FF
+  
+  
+#wrapper
+  background: #005078 url(/images/footer.png) repeat-x scroll left top 
+  
+#masthead
+  background: #000
+  a
+    position: absolute
+    right: 30px    
+
+.intro
+  background: #A1D9FF url(/images/footer.png) center 405px repeat-x scroll 
+  padding: 3em 0 105px 0
+  img.logo
+    +transition-duration(2s)
+    +transition-delay(1s)
+    +rotate(359)
+      
+    
+#main
+  margin: 0 auto
+  width: 960px
+  padding: 22px 0
+  
+  dl.services
+    float: left
+    margin: 0
+    padding: 0
+    
+ul.portfolio-links
+  list-style: none outside none
+  margin: 0
+  padding: 0
+  li
+  
+    float: left
+    margin: 0 10px 10px 0
+    a
+      background: none repeat scroll 0 0 #578AA6
+      display: block
+      padding: 4px
+      line-height: 0em
+      img 
+        margin-bottom: 0
+
+ul.screenshots
+  +horizontal-list
+  margin-bottom: 1em
+  li
+    background: #578AA6
+    padding: 3px
+    margin-right: 5px
+    line-height: 0em
+    
+body.index
+  #main
+    overflow: auto
+    section
+      font-size: 16px
+      float: left
+      margin: 0 0 1em
+      width: 580px
+  
+footer
+  background: #004162 url(/images/footer-dark.png) repeat-x scroll center top 
+  padding-top: 44px
+  #site-info
+    width: 960px
+    margin: 0 auto
+    padding-bottom: 44px
+    font-size: .9em

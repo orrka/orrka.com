@@ -16,4 +16,85 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 
 img a { border: none; }
 
-body { background: #333; color: #efefef; }
+@font-face { font-family: 'ChunkFive Regular'; src: url('/fonts/Chunkfive.eot'); src: local('ChunkFive Regular'), local('ChunkFive-Regular'), url('/fonts/Chunkfive.ttf') format('opentype'); }
+
+@font-face { font-family: 'Gentium Basic Regular'; src: url('/fonts/GenBasR.eot'); src: local('Gentium Basic Regular'), local('GentiumBasic-Regular'), url('/fonts/GenBasR.ttf') format('truetype'); }
+
+@font-face { font-family: 'Gentium Basic Italic'; src: url('/fonts/GenBasI.eot'); src: local('Gentium Basic Italic'), local('GentiumBasic-Italic'), url('/fonts/GenBasI.ttf') format('truetype'); }
+
+@font-face { font-family: 'Gentium Basic Bold'; src: url('/fonts/GenBasB.eot'); src: local('Gentium Basic Bold'), local('GentiumBasic-Bold'), url('/fonts/GenBasB.ttf') format('truetype'); }
+
+@font-face { font-family: 'Gentium Basic Bold Italic'; src: url('/fonts/GenBasBI.eot'); src: local('Gentium Basic Bold Italic'), local('GentiumBasic-BoldItalic'), url('/fonts/GenBasBI.ttf') format('truetype'); }
+
+@font-face { font-family: 'Gentium Book Basic Regular'; src: url('/fonts/GenBkBasR.eot'); src: local('Gentium Book Basic Regular'), local('GentiumBookBasic-Regular'), url('/fonts/GenBkBasR.ttf') format('truetype'); }
+
+@font-face { font-family: 'Gentium Book Basic Italic'; src: url('/fonts/GenBkBasI.eot'); src: local('Gentium Book Basic Italic'), local('GentiumBookBasic-Italic'), url('/fonts/GenBkBasI.ttf') format('truetype'); }
+
+@font-face { font-family: 'Gentium Book Basic Bold'; src: url('/fonts/GenBkBasB.eot'); src: local('Gentium Book Basic Bold'), local('GentiumBookBasic-Bold'), url('/fonts/GenBkBasB.ttf') format('truetype'); }
+
+@font-face { font-family: 'Gentium Book Basic Bold Italic'; src: url('/fonts/GenBkBasBI.eot'); src: url('/fonts/GenBkBasBI.ttf') format('truetype'); }
+
+body { color: #95DEFF; font-family: Helvetica,Arial,sans-serif; font-size: 14px; line-height: 1.3em; }
+
+a:link, a:active, a:hover, a:visited { color: #fff; font-weight: bold; }
+
+h1, h2, h3, h4, h5, h6 { clear: both; color: #FFFFFF; font-family: 'ChunkFive Regular',Georgia,serif; font-weight: normal; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
+
+h1 { font-size: 36px; line-height: 1.2em; }
+
+h2 { font-size: 32px; line-height: 1.2em; }
+.index h2 { clear: both; float: left; font-size: 24px; margin-right: 32px; text-align: right; text-transform: uppercase; width: 320px; }
+
+section.work h3 { font-family: inherit; font-weight: bold; margin-bottom: 0.5em; text-shadow: none; }
+
+p, ul, ol, dd, pre { margin-bottom: 22px; }
+
+dt { font-weight: bold; color: #fff; }
+
+span.amp { font-family: "Baskerville","Constantia","Palatino","Palatino Linotype","Book Antiqua","Georgia",serif; font-style: italic; font-weight: normal; }
+
+#masthead { text-align: center; padding: 11px; }
+#masthead h3 { color: #fff; font: 18px 'ChunkFive Regular',Georgia,serif; letter-spacing: 1px; text-transform: uppercase; }
+#masthead a { color: #578AA6; font-weight: bold; text-decoration: none; }
+#masthead a:hover { color: #fff; }
+
+.intro { text-align: center; }
+.intro h3 { color: #003F5F; font-weight: normal; font-family: 'Gentium Book Basic Regular', Georgia, serif; font-size: 40px; line-height: 1.2em; margin-bottom: 32px; text-align: center; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
+
+.orrka { font-family: 'Gentium Book Basic Bold Italic',Georgia,serif; font-weight: normal; font-style: normal; }
+
+footer { color: #95DEFF; text-align: right; }
+footer a { color: #fff; font-weight: bold; }
+
+section, article, aside, header, footer, nav, dialog, figure { display: block; }
+
+body { background: #A1D9FF; }
+
+#wrapper { background: #005078 url(/images/footer.png) repeat-x scroll left top; }
+
+#masthead { background: #000; }
+#masthead a { position: absolute; right: 30px; }
+
+.intro { background: #A1D9FF url(/images/footer.png) center 405px repeat-x scroll; padding: 3em 0 105px 0; }
+.intro img.logo { transition-duration: 2s; -webkit-transition-duration: 2s; -moz-transition-duration: 2s; -o-transition-duration: 2s; transition-delay: 1s; -webkit-transition-delay: 1s; -moz-transition-delay: 1s; -o-transition-delay: 1s; transform: rotate(359deg); -webkit-transform: rotate(359deg); -moz-transform: rotate(359deg); }
+
+#main { margin: 0 auto; width: 960px; padding: 22px 0; }
+#main dl.services { float: left; margin: 0; padding: 0; }
+
+ul.portfolio-links { list-style: none outside none; margin: 0; padding: 0; }
+ul.portfolio-links li { float: left; margin: 0 10px 10px 0; }
+ul.portfolio-links li a { background: none repeat scroll 0 0 #578AA6; display: block; padding: 4px; line-height: 0em; }
+ul.portfolio-links li a img { margin-bottom: 0; }
+
+ul.screenshots { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; display: inline-block; margin-bottom: 1em; }
+ul.screenshots { display: block; }
+ul.screenshots li { list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
+ul.screenshots li.first { padding-left: 0px; }
+ul.screenshots li.last { padding-right: 0px; }
+ul.screenshots li { background: #578AA6; padding: 3px; margin-right: 5px; line-height: 0em; }
+
+body.index #main { overflow: auto; }
+body.index #main section { font-size: 16px; float: left; margin: 0 0 1em; width: 580px; }
+
+footer { background: #004162 url(/images/footer-dark.png) repeat-x scroll center top; padding-top: 44px; }
+footer #site-info { width: 960px; margin: 0 auto; padding-bottom: 44px; font-size: .9em; }

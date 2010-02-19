@@ -2,13 +2,56 @@
 %html
   %head
     %link{ :href => "/css/screen.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/images/favicon.png", :rel => "shortcut icon"}
     %link{ :href => "/index.xml", :title => "#{title} - feed", :rel => "alternate", :type => "application/atom+xml" }
     %title
-      = title
-  %body
-    %section
-      = yield
+      - site_title = "Orrka"
+      - if @path == 'index'
+        = site_title
+      - elsif @path.split('/').compact.length == 4 
+        = "#{site_title} - #{title}"
+      - else
+        = "#{site_title} - #{@path.capitalize.gsub(/[-]/, ' ')}"
+  %body{:class => @path.gsub("/", "-")}
+    %section#wrapper
+      %section#masthead
+        %a{:href => "#main", :title => "skip to content"}↓ Dive in
+        %h3 Killer design & Killer code mean Killer apps.
+      .intro
+        %h3
+          %span.orrka Orrka
+          is a rare species that 
+          %br
+          swims in code
+          %span.amp &amp;
+          breathes design.
+        %a{:href => "/"}
+          %img.logo{:src => "/images/orrka-large.png", :alt => "Killer apps.", :height => "175", :width => "223"}
+      %section#main= yield
     %footer
-      powered by
-      %a{ :href => "http://cloudhead.io/toto" }
-        toto
+      %section#site-info
+        %span.adr
+          %span.street-address
+            10000 Concord Drive
+          %span.locality
+            Aubrey
+          ,
+          %span.region
+            TX
+          %span.postal-code
+            76227
+        \//
+        %span.tel
+          %span.value
+            +1 940.441.3664
+        \//
+        %a{ :href => "mailto:hello@orrka.com" }
+          hello@orrka.com
+        %div
+          \&copy; 2009 Orrka Bay, LLC // Powered by
+          %a.wp-link{ :href => "http://WordPress.org/", :title => "WordPress", :rel => "generator" }
+            WordPress
+          \// Built on the
+          %a.theme-link{ :href => "http://themeshaper.com/thematic/", :title => "Thematic Theme Framework", :rel => "designer" }
+            Thematic Theme Framework
+      

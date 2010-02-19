@@ -7,9 +7,11 @@ use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 
 use Rack::CommonLogger
 
 # Set up Compass/Sass
+
 require 'sass/plugin/rack'
-require 'compass'
 use Sass::Plugin::Rack
+require 'compass'
+Compass.configuration.parse('compass.config')
 Compass.configuration do |config|
   config.project_path = File.dirname(__FILE__)
   config.sass_dir = "sass"
@@ -42,7 +44,7 @@ toto = Toto::Server.new do
   # set [:setting], [value]
   # 
   # set :author,    ENV['USER']                               # blog author
-  # set :title,     Dir.pwd.split('/').last                   # site title
+  set :title,       Dir.pwd.split('/').last                   # site title
   # set :root,      "index"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   set :markdown,  :smart                                    # use markdown + smart-mode
@@ -50,7 +52,7 @@ toto = Toto::Server.new do
   # set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
-  set :to_html, lambda {|path, page, binding| Haml::Engine.new(File.read("#{path}/#{page}.haml")).render(binding) }
+  set :to_html, lambda {|path, page, binding| Haml::Engine.new(File.read("#{path}/#{page}.haml"), :format => :html5, :attr_wrapper => '"').render(binding) }
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 
   

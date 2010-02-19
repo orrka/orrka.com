@@ -1,18 +1,68 @@
-%section#articles
-  - for article in articles[0...3]
-    %article.post
-      %header
-        %h1
-          %a{ :href => article.path }
-            = article.title
-        %span.date
-          = article.date
-      %h1
-        = @path
-      %section.content
-        = article.summary
-      .more
-        %a{ :href => article.path }
-          read on &raquo;
-%section#archives
-  = archives[3..-1]
+%h2
+  What we believe.
+%section
+  %p.lead
+    Great user experiences come from a mastery of design&nbsp;
+    %em
+      and
+    \&nbsp;development.
+%h2
+  Jacks-of-all-trades,
+  %br
+  masters of some.
+%section
+  %dl.services
+    %dt
+      User interface design
+    %dd
+      From wireframes to Photoshop to clean and maintainable markup.
+    %dt
+      Front-end web development
+    %dd
+      Advanced methods including CSS meta frameworks like
+      %a{ :href => "http://compass-style.org" }
+        Compass
+      and JavaScript frameworks like
+      %a{ :href => "http://jquery.com" }
+        jQuery
+      \.
+    %dt
+      Shopping
+      %span.amp
+        \&amp;
+      Ecommerce themes
+    %dd
+      Over ten years of Ecommerce experience at some of the world’s largest online&nbsp;stores.
+    %dt
+      Social media marketing
+    %dt
+    %dd
+      Engage users and build relationships on Twitter, Facebook, and other social networks to build your&nbsp;brand.
+    %dt
+      Mashups
+    %dd
+      Don’t start from scratch. Stitch together powerful APIs  in your next microapp or marketing campaign.
+%h2
+  Stuff we’ve done.
+%section.work
+  %h3
+    Recent designs
+  %ul.portfolio-links
+    %li
+      %a{ :href => "/portfolio#tickstart" }
+        %img{ :title => "TickStart", :src => "/images/tickstart-150x150.jpg", :height => "150", :alt => "tickstart", :width => "150" }
+    %li
+      %a{ :href => "/portfolio#official-team-gear" }
+        %img{ :title => "Tech Team Shop", :src => "/images/tech-150x150.jpg", :height => "150", :alt => "Tech Team Shop", :width => "150" }
+    %li
+      %a{ :href => "/portfolio#tree-frog-studios" }
+        %img{ :title => "tree-frog", :src => "/images/tree-frog-150x150.jpg", :height => "150", :alt => "tree-frog", :width => "150" }
+%h2
+  Let’s connect.
+%section
+  We’d love to hear from you to talk about your project or just to say&nbsp;
+  %a{ :href => "mailto:hello@orrka.com" }
+    hello@orrka.com
+
+
+
